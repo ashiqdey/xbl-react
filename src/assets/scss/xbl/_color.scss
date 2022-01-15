@@ -1,0 +1,37 @@
+/*-----------------------background-----------------------*/
+// bg0 - background at 0th level (Elevation = bottom most layer)
+// bg1 - background at 1st level (Elevation = layer 1 from bottom)
+
+$colors: (
+  trans: transparent,
+  white: var(--white),
+  bg0: var(--bg0),
+  bg1: var(--bg1),
+  graye: var(--graye),
+  grayd: var(--grayd),
+  grayc: var(--grayc),
+  grayb: var(--grayb),
+  graya: var(--graya),
+  gray9: var(--gray9),
+  gray8: var(--gray8),
+  gray7: var(--gray7),
+  gray6: var(--gray6),
+  gray5: var(--gray5),
+  gray4: var(--gray4),
+  gray3: var(--gray3),
+  gray2: var(--gray2),
+  black: var(--black),
+  theme: var(--theme),
+);
+@each $k, $v in $colors {
+  .#{$k} {
+    background-color: $v;
+  }
+  .c#{$k} {
+    color: $v;
+  }
+}
+
+.zebra > *:nth-child(even) {
+  background-color: var(--bg0);
+}

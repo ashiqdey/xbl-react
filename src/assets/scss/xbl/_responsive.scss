@@ -1,0 +1,125 @@
+/*------------
+xs upto 568
+sm upto 768
+md upto 992
+lg upto 1200
+xl upto 1400
+xx upto 1920
+k4 from 1920
+--------------*/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*-------------------------------------------------------------------------
+  
+    for tablet
+  
+  ------------------------------------------------------------------------*/
+@media screen and (min-width: 568px) {
+  .xs {
+    display: none;
+  }
+
+  @each $k, $v in $widths {
+    .sm-w#{$k} {
+      width: $v;
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------
+  
+    for tablet
+  
+  ------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+  .md {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .xs,
+  .sm {
+    display: none;
+  }
+
+  @each $k, $v in $widths {
+    .md-w#{$k} {
+      width: $v;
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------
+  
+    for small web screen /tablet in landscape
+  
+  ------------------------------------------------------------------------*/
+@media screen and (max-width: 992px) {
+  .lg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .md {
+    display: none;
+  }
+
+  @each $k, $v in $widths {
+    .lg-w#{$k} {
+      width: $v;
+    }
+  }
+
+  .lg-jcc {
+    justify-content: center;
+  }
+
+  .lg-dn {
+    display: none;
+  }
+}
+
+/*-------------------------------------------------------------------------
+  
+    for normal laptop/pc screen 
+  
+  ------------------------------------------------------------------------*/
+@media screen and (min-width: 1200px) {
+  .lg {
+    display: none;
+  }
+
+  @each $k, $v in $widths {
+    .xl-w#{$k} {
+      width: $v;
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------
+  
+    for large screen
+  
+  ------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1400px) {
+  @each $k, $v in $widths {
+    .xx-w#{$k} {
+      width: $v;
+    }
+  }
+}
+
+/*-------------------------------------------------------------------------
+  
+    for 4k or extra large
+  
+  ------------------------------------------------------------------------*/
+
+@media screen and (min-width: 1920px) {
+}

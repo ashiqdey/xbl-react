@@ -1,0 +1,19 @@
+$sidebar: 280px;
+
+#sidebar {
+  background-color: #ddd;
+  width: $sidebar;
+
+  .active {
+    @include important-text;
+  }
+  .item > a {
+    padding: 14px;
+    display: flex;
+  }
+}
+
+#content {
+  width: calc(100% - $sidebar);
+  margin-left: $sidebar;
+}
