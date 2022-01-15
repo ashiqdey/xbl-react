@@ -4,6 +4,10 @@ $sidebar: 280px;
   background-color: #ddd;
   width: $sidebar;
 
+  @media (max-width: #{$md}) {
+    display: none;
+  }
+
   .active {
     @include important-text;
   }
@@ -14,6 +18,8 @@ $sidebar: 280px;
 }
 
 #content {
-  width: calc(100% - $sidebar);
-  margin-left: $sidebar;
+  @media (min-width: #{$md}) {
+    width: calc(100% - $sidebar);
+    margin-left: $sidebar;
+  }
 }

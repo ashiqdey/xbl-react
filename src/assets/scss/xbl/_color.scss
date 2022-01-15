@@ -22,9 +22,10 @@ $colors: (
   gray2: var(--gray2),
   black: var(--black),
   theme: var(--theme),
+  theme-01: var(--theme-01),
 );
 @each $k, $v in $colors {
-  .#{$k} {
+  #{"." + $k} {
     background-color: $v;
   }
   .c#{$k} {

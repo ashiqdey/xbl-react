@@ -2,12 +2,14 @@
 
 ## Todo
 
-- Rich text editor - experiement
-- Select dropdown - done
-- drag and drop file upload
-- crop image
+- EXPERIMENT - Rich text editor
+- DONE - Select dropdown
+- DONE - drag and drop file upload
+- DONE - crop image
 - Slider
+- Make reusable component
+- optimization
 
 ## Issues
 
-- Heading
+- Heading in texbox

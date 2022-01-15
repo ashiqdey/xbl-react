@@ -1,5 +1,5 @@
 /*------------
-xs upto 568
+xs upto 584
 sm upto 768
 md upto 992
 lg upto 1200
@@ -7,10 +7,45 @@ xl upto 1400
 xx upto 1920
 k4 from 1920
 --------------*/
+$xs: 0px;
+$sm: 584px;
+$md: 768px;
+$md: 992px;
+$lg: 1200px;
+$xl: 1400px;
+$xx: 1920px;
+$k4: 4000px;
 
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+.row > * {
+  width: 100%;
+}
+
+/*----------------width------------------*/
+$widths: (
+  0: 0,
+  10: 10%,
+  20: 20%,
+  25: 25%,
+  30: 30%,
+  33: 33%,
+  40: 40%,
+  50: 50%,
+  60: 60%,
+  66: 66%,
+  70: 70%,
+  80: 80%,
+  90: 90%,
+  100: 100%,
+);
+@each $k, $v in $widths {
+  .w#{$k} {
+    width: $v;
+  }
 }
 
 /*-------------------------------------------------------------------------
@@ -18,7 +53,7 @@ k4 from 1920
     for tablet
   
   ------------------------------------------------------------------------*/
-@media screen and (min-width: 568px) {
+@media screen and (min-width: $sm) {
   .xs {
     display: none;
   }
@@ -35,12 +70,12 @@ k4 from 1920
     for tablet
   
   ------------------------------------------------------------------------*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $md) {
   .md {
     display: none;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: $md) {
   .xs,
   .sm {
     display: none;
@@ -58,13 +93,13 @@ k4 from 1920
     for small web screen /tablet in landscape
   
   ------------------------------------------------------------------------*/
-@media screen and (max-width: 992px) {
+@media screen and (max-width: $lg) {
   .lg {
     display: none;
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $lg) {
   .md {
     display: none;
   }
@@ -89,7 +124,7 @@ k4 from 1920
     for normal laptop/pc screen 
   
   ------------------------------------------------------------------------*/
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $xl) {
   .lg {
     display: none;
   }
@@ -107,7 +142,7 @@ k4 from 1920
   
   ------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: $xl) {
   @each $k, $v in $widths {
     .xx-w#{$k} {
       width: $v;
@@ -121,5 +156,5 @@ k4 from 1920
   
   ------------------------------------------------------------------------*/
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: $k4) {
 }

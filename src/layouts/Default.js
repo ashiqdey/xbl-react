@@ -13,43 +13,49 @@ const Empty = ({ children }) => {
                         <Link to="/dashboard">dashboard</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/typography">Typography</Link>
+                        <Link to="/xbl/typography">Typography</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/form">Form</Link>
+                        <Link to="/xbl/form">Form</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/color">Color</Link>
+                        <Link to="/xbl/color">Color</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/margin-padding">Margin padding</Link>
+                        <Link to="/xbl/margin-padding">Margin padding</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/display">Display</Link>
+                        <Link to="/xbl/display">Display</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/width">Width</Link>
+                        <Link to="/xbl/width">Width</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/responsive">Responsive</Link>
+                        <Link to="/xbl/responsive">Responsive</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/zindex">Z-index</Link>
+                        <Link to="/xbl/zindex">Z-index</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/ripple">Ripple</Link>
+                        <Link to="/xbl/ripple">Ripple</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/select">Select</Link>
+                        <Link to="/xbl/select">Select</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/text-editor">Text editor</Link>
+                        <Link to="/xbl/image/crop">Image crop</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/text-editor-class">Text editor (class based)</Link>
+                        <Link to="/xbl/image/drop-crop">Image drop crop</Link>
                     </div>
                     <div className="item">
-                        <Link to="/dashboard/text-editor-wysiwyg">Text editor (wysiwyg)</Link>
+                        <Link to="/xbl/text-editor">Text editor</Link>
+                    </div>
+                    <div className="item">
+                        <Link to="/xbl/text-editor-class">Text editor (class based)</Link>
+                    </div>
+                    <div className="item">
+                        <Link to="/xbl/text-editor-wysiwyg">Text editor (wysiwyg)</Link>
                     </div>
 
                 </div>

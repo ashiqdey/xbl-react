@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import useFocus from "../hooks/useFocus";
 
 export const Input = (props) => {

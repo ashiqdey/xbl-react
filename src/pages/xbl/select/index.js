@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
-import Select, { components } from 'react-select';
 
 import { Options } from "./data";
-import CustomSelect from "./custom-menu";
+import Select from "../../../components/Select";
 
 export default function Index() {
     const [selectedOption, setselectedOption] = useState("");
@@ -21,7 +20,7 @@ export default function Index() {
                     {selectedOption && <p className="selected-option">You selected: </p>}
                     {selectedOption}
                 </div>
-                <CustomSelect
+                <Select
                     options={Options}
                     onChange={handleChange}
                 />
@@ -34,17 +33,8 @@ export default function Index() {
                         { value: 'strawberry', label: 'Strawberry' },
                         { value: 'vanilla', label: 'Vanilla' }
                     ]}
-                    components={{ Option }}
                 />
             </div>
         </div >
     )
 }
-
-const Option = (props) => {
-    return (
-        <>
-            <components.Option {...props}>{props.children}</components.Option>
-        </>
-    );
-};

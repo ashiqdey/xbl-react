@@ -25,6 +25,86 @@ export default function index() {
                 }
             </div>
 
+
+            <h1 className="mt5">Flex direction</h1>
+
+            <div className="flex fdc mt1 theme-01 p1">
+                <div className="ic50 graye">1</div>
+                <div className="ic30 grayd">2</div>
+                <div className="ic20 graye">3</div>
+            </div>
+
+
+            <div className="flex fdc mt1 theme-01 p1">
+                <div className="ic50 graye">1</div>
+                <div className="ic30 grayd">2</div>
+                <div className="ic20 graye">3</div>
+            </div>
+
+
+            <h1 className="mt5">Align items</h1>
+
+            <h4 className="mt2">align-items : flex-start</h4>
+            <div className="flex aifs mt1 theme-01 p1">
+                <div className="ic50 graye">1</div>
+                <div className="ic30 grayd">2</div>
+                <div className="ic20 graye">3</div>
+            </div>
+
+            <h4 className="mt2">align-items : center</h4>
+            <div className="flex aic mt1 theme-01 p1">
+                <div className="ic50 graye">1</div>
+                <div className="ic30 grayd">2</div>
+                <div className="ic20 graye">3</div>
+            </div>
+
+            <h4 className="mt2">align-items : flex-end</h4>
+            <div className="flex aife mt1 theme-01 p1">
+                <div className="ic50 graye">1</div>
+                <div className="ic30 grayd">2</div>
+                <div className="ic20 graye">3</div>
+            </div>
+
+
+
+            <h1 className="mt5">Justify content</h1>
+
+            <h4 className="mt2">justify-content : space-between</h4>
+            <div className="row jcsb mt1 theme-01 p1">
+                <div className="w25 p1 graye">Block 1</div>
+                <div className="w25 p1 grayd">Block 2</div>
+                <div className="w25 p1 graye">Block 3</div>
+            </div>
+
+
+            <h4 className="mt2">justify-content : space-around</h4>
+            <div className="row jcsa mt1 theme-01 p1">
+                <div className="w25 p1 graye">Block 1</div>
+                <div className="w25 p1 grayd">Block 2</div>
+                <div className="w25 p1 graye">Block 3</div>
+            </div>
+
+            <h4 className="mt2">justify-content : center</h4>
+            <div className="row jcc mt1 theme-01 p1">
+                <div className="w25 p1 graye">Block 1</div>
+                <div className="w25 p1 grayd">Block 2</div>
+                <div className="w25 p1 graye">Block 3</div>
+            </div>
+
+            <h4 className="mt2">justify-content : flex-start</h4>
+            <div className="row jcfs mt1 theme-01 p1">
+                <div className="w25 p1 graye">Block 1</div>
+                <div className="w25 p1 grayd">Block 2</div>
+                <div className="w25 p1 graye">Block 3</div>
+            </div>
+
+            <h4 className="mt2">justify-content : flex-end</h4>
+            <div className="row jcfe mt1 theme-01 p1">
+                <div className="w25 p1 graye">Block 1</div>
+                <div className="w25 p1 grayd">Block 2</div>
+                <div className="w25 p1 graye">Block 3</div>
+            </div>
+
         </div>
     )
 }

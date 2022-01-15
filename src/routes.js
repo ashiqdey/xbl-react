@@ -24,9 +24,12 @@ import Width from "./pages/xbl/width";
 import Zindex from "./pages/xbl/zindex";
 import Ripple from "./pages/xbl/ripple";
 import Select from "./pages/xbl/select";
-import TextEditor from "./pages/xbl/text-editor";
-import TextEditorClass from "./pages/xbl/text-editor-class";
-import TextEditorW from "./pages/xbl/text-editor-wysiwyg";
+import ImageCrop from "./pages/xbl/image/crop";
+import ImageDropCrop from "./pages/xbl/image/drop-crop";
+
+import TextEditor from "./pages/xbl/text-editor/text-editor";
+import TextEditorClass from "./pages/xbl/text-editor/text-editor-class";
+import TextEditorW from "./pages/xbl/text-editor/text-editor-wysiwyg";
 
 import AllListings from "./pages/all-listings";
 
@@ -44,7 +47,7 @@ const routes = [
         ]
     },
     {
-        path: "dashboard",
+        path: "xbl",
         element: <DefaultLayout />,
         children: [
             {
@@ -93,6 +96,14 @@ const routes = [
                 element: <Select />,
             },
             {
+                path: "image/crop",
+                element: <ImageCrop />,
+            },
+            {
+                path: "image/drop-crop",
+                element: <ImageDropCrop />,
+            },
+            {
                 path: "text-editor",
                 element: <TextEditor />,
             },
@@ -103,6 +114,20 @@ const routes = [
             {
                 path: "text-editor-wysiwyg",
                 element: <TextEditorW />,
+            },
+            {
+                path: "all-listings",
+                element: <AllListings />,
+            }
+        ]
+    },
+    {
+        path: "dashboard",
+        element: <DefaultLayout />,
+        children: [
+            {
+                path: "",
+                element: <DashboardPage />,
             },
             {
                 path: "all-listings",

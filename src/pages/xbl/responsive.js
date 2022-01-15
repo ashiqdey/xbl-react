@@ -1,20 +1,4 @@
 export default function index() {
-    const widths = [
-        0,
-        10,
-        20,
-        25,
-        30,
-        33,
-        40,
-        50,
-        60,
-        66,
-        70,
-        80,
-        90,
-        100
-    ];
 
     return (
         <div className='p2'>
@@ -29,25 +13,70 @@ export default function index() {
             </div>
 
             <div className="mt2">
-                <div className="flex zebra mt2">
+                <div className="row zebra mt2">
                     <div className="p1 graye">Block 1</div>
                     <div className="p1 graye">Block 2</div>
                 </div>
 
-                <div className="flex zebra mt2">
+                <div className="row zebra mt2">
                     <div className="w50 p1 graye">Block 1</div>
                     <div className="w50 p1 graye">Block 2</div>
                 </div>
 
-                <div className="flex zebra mt2">
+                <div className="row zebra mt2">
                     <div className="w40 p1 graye">Block 1</div>
                     <div className="w60 p1 graye">Block 2</div>
                 </div>
 
-                <div className="row zebra mt2">
-                    <div className="sm-w40 p1 graye">Block 1</div>
-                    <div className="sm-w60 p1 graye">Block 2</div>
+                <h1 className="mt5">Responsive</h1>
+
+                <h4 className="mt2">screen  > 0</h4>
+                <div className="row zebra mt1">
+                    <div className="w30 p1 graye">Block 1</div>
+                    <div className="w70 p1 graye">Block 2</div>
+                    <div className="p1 grayd">Block 3</div>
                 </div>
+
+
+                <h4 className="mt2">screen &gt; 584px</h4>
+                <div className="row zebra mt1">
+                    <div className="sm-w30 p1 graye">Block 1</div>
+                    <div className="sm-w70 p1 graye">Block 2</div>
+                    <div className="p1 grayd">Block 3</div>
+                </div>
+
+                <h4 className="mt2">screen &gt; 768px</h4>
+                <div className="row mt1">
+                    <div className="sm-w30 md-w70 p1 graye">Block 1</div>
+                    <div className="sm-w70 md-w30 p1 grayd">Block 2</div>
+                    <div className="p1 grayc">Block 3</div>
+                </div>
+
+                <h4 className="mt2">screen &gt; 992px</h4>
+                <div className="row mt1">
+                    <div className="sm-w30 md-w70 lg-w50 p1 graye">Block 1</div>
+                    <div className="sm-w70 md-w30 lg-w50 p1 grayd">Block 2</div>
+                    <div className="p1 grayc">Block 3</div>
+                </div>
+
+                <h4 className="mt2">screen &gt; 1200px</h4>
+                <div className="row mt1">
+                    <div className="xl-w30 p1 graye">Block 1</div>
+                    <div className="xl-w70 p1 grayd">Block 2</div>
+                    <div className="p1 grayc">Block 3</div>
+                </div>
+
+                <h4 className="mt2">screen &gt; 1400px</h4>
+                <div className="row mt1">
+                    <div className="xx-w30 p1 graye">Block 1</div>
+                    <div className="xx-w70 p1 grayd">Block 2</div>
+                    <div className="p1 grayc">Block 3</div>
+                </div>
+
+
+
+
+
 
 
             </div>

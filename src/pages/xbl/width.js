@@ -36,7 +36,7 @@ export default function index() {
             </div>
 
             <div className="mt2">
-                <a name="width-sm">
+                <a href="#width-sm" name="width-sm">
                     <h4>sm-w (small : screen &gt; 568px)</h4>
                 </a>
                 {
@@ -46,7 +46,7 @@ export default function index() {
 
 
             <div className="mt2">
-                <a name="width-md">
+                <a href="#width-md" name="width-md">
                     <h4>md-w (medium : screen &gt; 768px)</h4>
                 </a>
                 {
@@ -56,7 +56,7 @@ export default function index() {
 
 
             <div className="mt2">
-                <a name="width-md">
+                <a href="#width-md" name="width-md">
                     <h4>lg-w (large : screen &gt; 992px)</h4>
                 </a>
                 {
@@ -65,7 +65,7 @@ export default function index() {
             </div>
 
             <div className="mt2">
-                <a name="width-xl">
+                <a href="#width-xl" name="width-xl">
                     <h4>xl-w (extra large : screen &gt; 1200px)</h4>
                 </a>
                 {
@@ -76,7 +76,7 @@ export default function index() {
 
 
             <div className="mt2">
-                <a name="width-xx">
+                <a href="#width-x" name="width-xx">
                     <h4>xx-w (extra extra large : screen &gt; 1400px)</h4>
                 </a>
                 {

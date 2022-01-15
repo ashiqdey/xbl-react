@@ -3,7 +3,7 @@ import { convertToRaw, EditorState } from 'draft-js';
 import { Editor } from 'react-draft-wysiwyg';
 
 // output
-import { convertToHTML } from 'draft-convert';
+// import { convertToHTML } from 'draft-convert';
 import draftToHtml from 'draftjs-to-html';
 import DOMPurify from 'dompurify';
 
@@ -30,10 +30,10 @@ const App = () => {
         setConvertedContent(value);
     }
     const createMarkup = (html) => {
-        console.log(html);
-        return {
-            __html: html
-        }
+        // console.log(html);
+        // return {
+        //     __html: html
+        // }
 
         return {
             __html: DOMPurify.sanitize(html)

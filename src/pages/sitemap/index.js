@@ -12,7 +12,7 @@ export default function index() {
                     <Link to="/dashboard">dashboard</Link>
                 </li>
                 <li>
-                    <Link to="/dashboard/xbl">Xbl framework</Link>
+                    <Link to="/xbl">Xbl framework</Link>
                 </li>
             </ol>
         </div>

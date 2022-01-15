@@ -1,4 +1,3 @@
-'use strict';
 import React, { useState, useEffect } from "react";
 import {
     convertToRaw,
@@ -10,15 +9,15 @@ import {
 } from 'draft-js';
 
 // output
-import { convertToHTML } from 'draft-convert';
+// import { convertToHTML } from 'draft-convert';
 import draftToHtml from 'draftjs-to-html';
 import DOMPurify from 'dompurify';
 
-import CustomSelect from "./select/custom-menu";
+import Select from "../../../components/Select";
 
 
-import Overlay from "./overlay";
-import testUtils from "react-dom/test-utils";
+import Overlay from "../overlay";
+// import testUtils from "react-dom/test-utils";
 
 
 class TextEditorClass extends React.Component {
@@ -288,7 +287,6 @@ class TextEditorClass extends React.Component {
                                 onChange={this.onChange}
                                 handleKeyCommand={this.handleKeyCommand}
                                 keyBindingFn={this.mapKeyToEditorCommand}
-                                onChange={this.onChange}
                                 placeholder="Tell a story..."
                                 // ref="editor"
                                 ref={e => this.editor = e}
@@ -434,20 +432,18 @@ class StyleButton extends React.Component {
 }
 
 const HeadingControls = (props) => {
-
-    const HEADING_TYPES = [
-        { label: 'Heading 1', value: "1", style: 'header-one' },
-        { label: 'Heading 2', value: "2", style: 'header-two' },
-        { label: 'Heading 3', value: "3", style: 'header-three' },
-        { label: 'Heading 4', value: "4", style: 'header-four' },
-        { label: 'Heading 5', value: "5", style: 'header-five' },
-        { label: 'Heading 6', value: "6", style: 'header-six' }
-    ];
-
-    const [state, setState] = useState(HEADING_TYPES)
+    const [state, setState] = useState([])
 
     useEffect(() => {
-        let temp = HEADING_TYPES.map((type, i) => {
+        const HEADING_TYPES = [
+            { label: 'Heading 1', value: "1", style: 'header-one' },
+            { label: 'Heading 2', value: "2", style: 'header-two' },
+            { label: 'Heading 3', value: "3", style: 'header-three' },
+            { label: 'Heading 4', value: "4", style: 'header-four' },
+            { label: 'Heading 5', value: "5", style: 'header-five' },
+            { label: 'Heading 6', value: "6", style: 'header-six' }
+        ];
+        setState(HEADING_TYPES.map((type, i) => {
             type.label = (
                 <span
                     key={i}
@@ -458,16 +454,14 @@ const HeadingControls = (props) => {
                 </span>
             );
             return type;
-        });
+        }));
 
-        setState(temp);
-
-    }, [])
+    }, [props])
 
 
 
     return (
-        <CustomSelect
+        <Select
             className="pr z10"
             options={state}
             isSearchable={false}

@@ -22,7 +22,8 @@ export default function index() {
                         "gray3",
                         "gray2",
                         "black",
-                        "theme"
+                        "theme",
+                        "theme-01"
                     ].map((e, i) => <div key={i} className={`p1 m50 bslg br5 ${e}`}>{e}</div>)
                 }
             </div>

@@ -1,5 +1,5 @@
 import React from "react";
-import Select, { components, IndicatorSeparatorProps } from "react-select";
+import Select, { components } from "react-select";
 
 const Option = (props) => {
     return (
@@ -19,7 +19,9 @@ const CustomSelect = ({ ...rest }) => {
     return (
         <Select
             components={{ Option, IndicatorSeparator }}
+            classNamePrefix="select"
             {...rest}
+        // menuIsOpen={true}
         ></Select>
     );
 };
