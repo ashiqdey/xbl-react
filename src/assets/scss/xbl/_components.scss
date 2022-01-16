@@ -147,6 +147,7 @@
 .select {
   &__menu {
     margin-top: -1px !important;
+    z-index: 5 !important;
   }
   &__indicator {
     padding: 0 3px 0 0 !important;

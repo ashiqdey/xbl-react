@@ -1,7 +1,7 @@
 $sidebar: 280px;
 
 #sidebar {
-  background-color: #ddd;
+  border-right: 1px solid var(--greyc);
   width: $sidebar;
 
   @media (max-width: #{$md}) {
@@ -9,10 +9,10 @@ $sidebar: 280px;
   }
 
   .active {
-    @include important-text;
+    @include menu-active;
   }
   .item > a {
-    padding: 14px;
+    padding: 10px 14px;
     display: flex;
   }
 }

@@ -1,4 +1,4 @@
-import { Input, Spinner } from "../../components/Form"
+import { Input, Spinner } from "../../../components/Form"
 
 export default function index() {
     return (
@@ -29,6 +29,10 @@ export default function index() {
                 <div>
                     <Input type="textarea" label="Write something..." />
                 </div>
+            </div>
+
+            <div className="mt1">
+                <Input type="switch" />
             </div>
 
             <div className="mt2">

@@ -4,13 +4,13 @@ import ReactCrop from 'react-image-crop';
 import 'react-image-crop/dist/ReactCrop.css';
 import { useDropzone } from 'react-dropzone';
 
-export default function Index() {
+export default function Index({ result, setResult }) {
     // input image url
     const [srcImg, setSrcImg] = useState(null);
     const [image, setImage] = useState(null);
 
     // save the resulted image
-    const [result, setResult] = useState(null);
+    // const [result, setResult] = useState(null);
 
 
 
@@ -144,34 +144,26 @@ export default function Index() {
 
 
 
-    return <div className='p2'>
-        <h4>Image drop and crop</h4>
+    return <div>
 
-        <div className="mt2">
-            <div className="dropzone-wrap">
-                <div {...getRootProps({
-                    className: 'dropzone',
-                    style
-                })}>
-                    <input
-                        {...getInputProps()}
-                        onChange={handleImage}
-                    />
-                    <p>Drag and drop, or click to select files</p>
-                </div>
+        <div className="dropzone-wrap mt2">
+            <div {...getRootProps({
+                className: 'dropzone',
+                style
+            })}>
+                <input
+                    {...getInputProps()}
+                    onChange={handleImage}
+                />
+                <p>Drag and drop, or click to select files</p>
             </div>
         </div>
 
-        {/* <input
-            type="file"
-            accept="image/*"
-            onChange={handleImage}
-        /> */}
 
         {srcImg && (
-            <div className='mt2 w70 mcen'>
+            <div className='mt2 w100 mcen'>
                 <ReactCrop
-                    style={{ maxWidth: "50%" }}
+                    style={{ maxWidth: "100%" }}
                     src={srcImg}
                     onImageLoaded={setImage}
                     crop={crop}
@@ -184,11 +176,5 @@ export default function Index() {
             </div>
         )}
 
-
-        {result && (
-            <div>
-                <img src={result} alt="" />
-            </div>
-        )}
     </div>;
 }

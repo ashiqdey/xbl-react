@@ -24,8 +24,16 @@ import Width from "./pages/xbl/width";
 import Zindex from "./pages/xbl/zindex";
 import Ripple from "./pages/xbl/ripple";
 import Select from "./pages/xbl/select";
+import FormFormik from "./pages/xbl/form/formik";
+import FormFormikYup from "./pages/xbl/form/formik-yup";
+
+import SliderFlickity from "./pages/xbl/slider/flickity";
+import SliderFlickityComponent from "./pages/xbl/slider/flickity-component";
+
 import ImageCrop from "./pages/xbl/image/crop";
 import ImageDropCrop from "./pages/xbl/image/drop-crop";
+import ResuableImageDropCrop from "./pages/xbl/image/reusable-drop-crop";
+// reusable-drop-crop
 
 import TextEditor from "./pages/xbl/text-editor/text-editor";
 import TextEditorClass from "./pages/xbl/text-editor/text-editor-class";
@@ -102,6 +110,26 @@ const routes = [
             {
                 path: "image/drop-crop",
                 element: <ImageDropCrop />,
+            },
+            {
+                path: "image/reusable-drop-crop",
+                element: <ResuableImageDropCrop />,
+            },
+            {
+                path: "slider/flickity",
+                element: <SliderFlickity />,
+            },
+            {
+                path: "slider/flickity-component",
+                element: <SliderFlickityComponent />,
+            },
+            {
+                path: "form/formik",
+                element: <FormFormik />,
+            },
+            {
+                path: "form/formik-yup",
+                element: <FormFormikYup />,
             },
             {
                 path: "text-editor",

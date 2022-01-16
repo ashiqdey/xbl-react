@@ -4,7 +4,7 @@
 
 $colors: (
   trans: transparent,
-  white: var(--white),
+  "white": var(--white),
   bg0: var(--bg0),
   bg1: var(--bg1),
   graye: var(--graye),
@@ -20,7 +20,7 @@ $colors: (
   gray4: var(--gray4),
   gray3: var(--gray3),
   gray2: var(--gray2),
-  black: var(--black),
+  "black": var(--black),
   theme: var(--theme),
   theme-01: var(--theme-01),
 );

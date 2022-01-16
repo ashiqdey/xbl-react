@@ -1,5 +1,6 @@
-@mixin important-text {
-  background: rgba(255, 41, 41, 0.164);
-  font-size: 25px;
-  color: rgb(228, 52, 66);
+@mixin menu-active {
+  background: var(--theme-01);
+  color: var(--theme);
+  font-weight: bold;
+  border-radius: 10px;
 }

@@ -12,6 +12,10 @@ export const Input = (props) => {
     if (type === "radio" || type === "checkbox") {
         return <Checkbox {...props} />
     }
+    if (type === "switch") {
+        return <Switch {...props} />
+    }
+
     return <InputBox {...props} />
 }
 
@@ -19,6 +23,7 @@ export const Input = (props) => {
 
 function InputBox(props) {
     const {
+        children,
         type = "text",
         label = "",
         className = "",
@@ -36,11 +41,14 @@ function InputBox(props) {
 
 
     return <div className={`ninput ${className}`} prefix={prefix}>
-        <input {...rest} type={inputType} ref={inputRef} placeholder="." />
+        {
+            // formik compatibility
+            children ? children : <input {...rest} type={inputType} ref={inputRef} placeholder="." />
+        }
         <label>{label}</label>
         {
             type === "password" && <div
-                className={`password-toggle pa ic50 cp z2 b0 r0 ${inputType}`}
+                className={`password-toggle pa ic50 cp z2 t0 r0 ${inputType}`}
                 onClick={togglePassword}
             ></div>
         }
@@ -81,6 +89,17 @@ function Checkbox(props) {
         <div className="text">{label}</div>
     </label>)
 }
+
+
+
+
+function Switch({ ...rest }) {
+    return (<label className="switch" >
+        <input {...rest} type="checkbox" />
+        <span className="slider"></span>
+    </label>)
+}
+
 
 
 
