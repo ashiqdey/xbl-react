@@ -40,6 +40,7 @@ import TextEditorClass from "./pages/xbl/text-editor/text-editor-class";
 import TextEditorW from "./pages/xbl/text-editor/text-editor-wysiwyg";
 
 import AllListings from "./pages/all-listings";
+import ApiPage from "./pages/api";
 
 
 
@@ -147,6 +148,16 @@ const routes = [
                 path: "all-listings",
                 element: <AllListings />,
             }
+        ]
+    },
+    {
+        path: "helper",
+        element: <DefaultLayout />,
+        children: [
+            {
+                path: "api",
+                element: <ApiPage />,
+            },
         ]
     },
     {

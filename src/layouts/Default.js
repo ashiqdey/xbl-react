@@ -78,6 +78,11 @@ const Empty = ({ children }) => {
                     <div className="item">
                         <Link to="/xbl/text-editor-wysiwyg">Text editor (wysiwyg)</Link>
                     </div>
+                    <hr />
+
+                    <div className="item">
+                        <Link to="/helper/api">API</Link>
+                    </div>
 
                 </div>
             </div>
